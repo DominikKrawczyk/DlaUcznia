@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dla Ucznia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<style>
+		/* Style for the menu */
+		nav {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			list-style-type: none;
+		}
+
+		nav ul li {
+			margin: 0 10px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		/* Style for the hamburger menu on mobile devices */
+		@media screen and (max-width: 600px) {
+			nav ul {
+				display: none;
+			}
+
+			nav .menu-toggle {
+				display: block;
+			}
+		}
+
+		nav .menu-toggle {
+			display: none;
+			cursor: pointer;
+			font-size: 24px;
+			color: #fff;
+			padding: 10px;
+		}
+
+		/* Style for the articles */
+		article {
+			margin-top: 10px;
+			margin-bottom: 30px;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+
+		article h2 {
+			margin-top: 0;
+		}
+
+		article p {
+			margin-bottom: 15px;
+		}
+
+		/* Style for the read more buttons */
+		.read-more {
+			display: block;
+			margin-top: 10px;
+			text-align: right;
+		}
+
+		.read-more a {
+			background-color: #333;
+			color: #fff;
+			padding: 5px 10px;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+
+		.read-more a:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation menu -->
+	<nav>
+		<a href="#">Dla Ucznia</a>
+		<ul>
+			<li><a href="#"></a></li>
+			<li><a href="#">O nas</a></li>
+			<li><a href="#">Programy</a></li>
+			<li><a href="#">Artykuły</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+		<div class="menu-toggle">&#9776;</div>
+	</nav>
+
+	<!-- Article 1 -->
+	<article>
+		<h2>Article 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis neque in lorem blandit scelerisque. Maecenas auctor mi eu nibh dictum, ac vulputate lacus interdum. Ut fermentum, nisl eu consequat pretium, velit ligula faucibus quam, at dictum quam mauris accumsan sapien.</p>
+		<div class="read-more"><a href="#">Read More</a></div>
+	</article>
+
+	<!-- Article 2 -->
+	<article>
+		<h2>Article 2</h2>
+		<p>Vivamus euismod, augue vitae accumsan interdum, purus ligula dictum elit, nec tincidunt orci nisl ac elit. Sed pharetra est vel ipsum malesuada, nec elementum odio tempor. Quisque eget orci vel dolor mattis consectetur.</p>
+		<div class="read-more"><a href="#">Read More</a></div>
+	</article>
+
+	<!-- Article 3 -->
+	<article>
+		<h2>Article 3</h2>
+		<p>Ut in tempus mauris. Donec aliquam, leo a lacinia cursus, odio risus vestibulum sem, a viverra turpis augue in dolor. Duis dapibus ipsum et urna faucibus, quis gravida urna vestibulum. Nam fringilla, mi et interdum venenatis, velit sapien malesuada purus, vel mollis neque elit non nulla.</p>
+		<div class="read-more"><a href="#">Read More</a></div>
+	</article>
+
+	<!-- Article 4 -->
+	<article>
+		<h2>Article 4</h2>
+		<p>Suspendisse bibendum velit sit amet urna euismod, vel dictum nisl pharetra. Fusce eu orci vel tortor viverra ultrices at non sapien. Sed ultricies, libero vel bibendum consectetur, diam diam interdum lorem, et molestie orci sapien a sapien.</p>
+		<div class="read-more"><a href="#">Read More</a></div>
+	</article>
+
+	<!-- Article 5 -->
+	<article>
+		<h2>Article 5</h2>
+		<p>Donec nec velit auctor, posuere enim at, lobortis nisl. Fusce euismod tincidunt sapien, eget facilisis sapien convallis a. Praesent viverra magna vitae ipsum hendrerit tincidunt. Integer ac risus eu justo lobortis fermentum nec vitae quam.</p>
+		<div class="read-more"><a href="#">Read More</a></div>
+	</article>
+
+	<!-- Article 6 -->
+	<article>
+		<h2>Article 6</h2>
+		<p>Mauris condimentum, purus quis consequat lacinia, risus nunc gravida magna, non pretium eros ipsum at risus. Ut eget nunc sed ex elementum tincidunt. Nulla facilisi. Sed vel augue felis.</p>
+		<div class="read-more"><a href="#">Read More</a></div>
+	</article>
+
+	<!-- Script for the hamburger menu -->
+	<script>
+		// Get the menu toggle element
+		var menuToggle = document.querySelector('.menu-toggle');
+
+		// Get the menu list element
+		var menuList = document.querySelector('nav ul');
+
+		// Add an event listener to the menu toggle element
+		menuToggle.addEventListener('click', function() {
+			// Toggle the class 'active' on the menu list element
+			menuList.classList.toggle('active');
+		});
+	</script>
+</body>
+</html>
